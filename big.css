@@ -13,6 +13,19 @@ h1, h2, h3, p {
   margin:0;
 }
 
+@-webkit-keyframes blinker {  
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+
+.blink {
+  -webkit-animation-name: blinker;  
+  -webkit-animation-iteration-count: infinite;  
+  -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+  -webkit-animation-duration: 800ms; 
+}
+
+
 em, a {
   font-style:normal;
   color:#8dbd0c;
@@ -32,9 +45,9 @@ div {
   cursor:pointer;
   cursor:hand;
   position:absolute;
-  top:20px;
-  left:20px;
-  padding: 40px;
+  top:0;
+  left:0;
+  /* padding: 40px; */
 }
 
 .invert {
