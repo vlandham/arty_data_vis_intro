@@ -7,38 +7,44 @@
 
 ## What is Data Visualization? 
 
- * complicated question 
-   * many consumers and many producers of visual 
+* complicated question 
+  * many consumers and many producers of visual works
 
-- the role of data visualization is to communicate (data) meaning through stories.
+* the role of data visualization is to communicate (data) meaning through stories.
 
-- one story
-- 1000s of stories
+Definition from an old Scott Murray presentation. 
 
- - what is data?
- - data is biased. data vis is biased
+"Stories" is a strange word here - for the non-artist - but let's go with it.
 
-- data design as a process not a product
- -- data visualizations are visual solutions to data driven problems
-
-What is (a) Data Visualization?
-- a visualization is a product of a data design process 
-  -- can be effective
-  -- or ineffective
-
-(success or failure)
-
-Tips for Effective Visualizations
+* one story
+* 100s of stories
 
 
-Clarify What And Why
+* excluded for now
+  * what is data?
+  * data is biased. data vis is biased
 
-- First step of a process
+* data design as a process not a product
+  * data visualizations are visual solutions to data driven problems
 
-- Define what you are trying to communicate
+## What is (a) Data Visualization?
+
+* a visualization is a product of a data design process 
+ * can be effective
+ * or ineffective
+
+
+## Tips for Effective Visualizations
+
+
+## Clarify What And Why
+
+* First step of a process
+
+* Define what you are trying to communicate
  (broad or specific)
 
-- Starts with who you are trying to communicate to
+* Starts with who you are trying to communicate to
     (your audience)
 
 
@@ -46,17 +52,16 @@ Start with a  question
 A question your audience wants the answer to
 http://www.visualcomplexity.com/vc/blog/?p=644
 
-
 Helps to find the story (narrative)
 
-- Audience can be yourself
--- Exploratory vs Explanatory
+* Audience can be yourself
+  * Exploratory vs Explanatory
 
 - respect the data
 - respect the audience 
 
 
-Follow Best Practices
+## Rules
 
 
 - lots of rules to guide you
@@ -68,20 +73,20 @@ http://mediamatters.org/research/2012/10/01/a-history-of-dishonest-fox-charts/19
 - Visual Encoding Rules
  
 
-Know What is Possible
+## Know What is Possible
 
  - everything is a remix
 
  - find inspiration in other work 
  
-Iterate 
+## Iterate 
 
 - combine possibilities and best practices together to communicate your what and why
 
 - sketch and hone with these 'success metrics' in mind 
 
 
-- Context is Key
+## Context is Key
 
 - context is integration
 -- text around to explain
@@ -96,13 +101,13 @@ Iterate
    - especially true in interaction 
 
 
-- Simplify whenever possible
+## Simplify whenever possible
 
 
   - Jonathan Corum example
   - Dashboard example
 
-A few of my favorite charts
+## A few of my favorite charts
 
 - robust solutions to many problems
  (maybe yours)
