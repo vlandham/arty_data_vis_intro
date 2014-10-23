@@ -52,6 +52,17 @@ animateTufte = (id, clipId) ->
   while i < n
     data.push({x:getRandomInt(0,width),y:getRandomInt(0,height), dir:Math.random() > 0.4})
     i += 1
+  svg.selectAll(".outline").data(data)
+    .enter().append("rect")
+    .attr("class", "outline")
+    .attr("width", bw)
+    .attr("height", bw)
+    .attr('x', (d) -> d.x)
+    .attr('y', (d) -> d.y)
+    .attr("fill", "none")
+    .attr("stroke", "black")
+    .attr("stroke-width", 2)
+    .attr("stroke-opacity", 0.7)
 
   svg.select(clipId).selectAll("rect").data(data)
     .enter().append("rect")
@@ -59,6 +70,7 @@ animateTufte = (id, clipId) ->
     .attr("height", bw)
     .attr('x', (d) -> d.x)
     .attr('y', (d) -> d.y)
+
 
   animate = () ->
     data.forEach (d) ->
@@ -75,6 +87,15 @@ animateTufte = (id, clipId) ->
       .ease("linear")
       .attr("x", (d) -> d.x)
       .attr("y", (d) -> d.y)
+
+    svg.selectAll(".outline").data(data)
+      .transition()
+      .duration(3000)
+      .delay((d,i) -> i * 10)
+      .ease("linear")
+      .attr("x", (d) -> d.x)
+      .attr("y", (d) -> d.y)
+
     timeout = setTimeout(animate, 3000)
   animate()
 
