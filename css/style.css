@@ -28,4 +28,9 @@ p, ul, ol, blockquote, img {
   /* margin: 3rem auto; */
   line-height: 3.5rem;
 }
+
+.title text {
+  font-family:font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+}
   

@@ -40,7 +40,46 @@ animateTitle = () ->
   animate()
 
 
+animateTufte = (id, clipId) ->
+  svg = d3.select(id)
+  bw = 20
+  width = svg.attr("width") - bw
+  height = svg.attr("height") - bw
+
+  data = []
+  i = 0
+  n = 10
+  while i < n
+    data.push({x:getRandomInt(0,width),y:getRandomInt(0,height), dir:Math.random() > 0.4})
+    i += 1
+
+  svg.select(clipId).selectAll("rect").data(data)
+    .enter().append("rect")
+    .attr("width", bw)
+    .attr("height", bw)
+    .attr('x', (d) -> d.x)
+    .attr('y', (d) -> d.y)
+
+  animate = () ->
+    data.forEach (d) ->
+      if d.dir
+        d.x = getRandomInt(0, width)
+      else
+        d.y = getRandomInt(0, height)
+      d.dir = if d.dir then false else true
+
+    svg.select(clipId).selectAll("rect").data(data)
+      .transition()
+      .duration(3000)
+      .delay((d,i) -> i * 10)
+      .ease("linear")
+      .attr("x", (d) -> d.x)
+      .attr("y", (d) -> d.y)
+    timeout = setTimeout(animate, 3000)
+  animate()
+
     
 
 $ ->
   animateTitle()
+  animateTufte("#tufteSvg", "#tuftePath")
