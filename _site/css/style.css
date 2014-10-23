@@ -1,0 +1,26 @@
+
+body, input {
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+body .container {
+  min-height: 100%;
+  position: relative;
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+
+p, ul, ol, blockquote, img {
+  margin: 2rem 0;
+}
+
+.container {
+  margin: 3rem auto;
+  line-height: 3.5rem;
+}
+  
+.svg-clipped {
+  -webkit-clip-path: url(#svgPath);
+  clip-path: url(#svgPath);
+}
