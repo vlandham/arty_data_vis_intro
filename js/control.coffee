@@ -102,5 +102,5 @@ animateTufte = (id, clipId) ->
     
 
 $ ->
-  animateTitle()
+  # animateTitle()
   animateTufte("#tufteSvg", "#tuftePath")
