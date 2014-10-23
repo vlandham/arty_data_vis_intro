@@ -3,11 +3,20 @@ body, input {
   font-family: Georgia, Times, "Times New Roman", serif;
 }
 
+/* body .container { */
+/*   min-height: 100%; */
+/*   position: relative; */
+/*   margin: 0; */
+/*   font-size: 2.2rem; */
+/* } */
+
 body .container {
-  min-height: 100%;
-  position: relative;
-  margin: 0;
-  font-size: 2.2rem;
+  font-family: "freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif;
+  letter-spacing: 0.01rem;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 1.5;
 }
 
 
@@ -16,11 +25,7 @@ p, ul, ol, blockquote, img {
 }
 
 .container {
-  margin: 3rem auto;
+  /* margin: 3rem auto; */
   line-height: 3.5rem;
 }
   
-.svg-clipped {
-  -webkit-clip-path: url(#svgPath);
-  clip-path: url(#svgPath);
-}
