@@ -72,7 +72,7 @@ layout: default
 
 <script type="text/coffeescript">
 animateTitle = () ->
-  numMoves = 5
+  numMoves = 10
   curMoves = 0
   timeout = null
   svg = d3.select("#titleSvg")
@@ -149,7 +149,7 @@ animateTitle()
   <svg id="tufteSvg" height="200" width="1000" xmlns="http://www.w3.org/2000/svg" version="1.1" >
     <defs>
     <clipPath id="tuftePath">
-    <text x="0" y="200" textLength="960" lengthAdjust="spacing" font-family="Raleway" font-weight="800" font-size="200px" >Tufte Rules</text>
+    <text x="0" y="190" textLength="960" lengthAdjust="spacing" font-family="Raleway" font-weight="800" font-size="200px" >Tufte Rules</text>
     </clipPath>
     </defs>
     <image clip-path="url(#tuftePath)" height="100%" width="100%" xlink:href="img/notes/header2.jpg" />
